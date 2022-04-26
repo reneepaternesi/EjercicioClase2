@@ -18,3 +18,16 @@ body{
 .calculations span {
     font-weight: bold;;
 }
+
+
+button {
+    border-radius: 4px;
+    background-color: coral;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+h1 {
+    border-top: 1px solid white;
+    padding: 10px;
+}

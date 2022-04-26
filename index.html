@@ -11,7 +11,10 @@
     </head>
     <body>
         <div id="app">
-        <p class="message"> {{message}}</p>
+            <h1>INTERPOLATION</h1>
+            <p class="message"> {{message}}</p>
+            <p  class="message-bind" v-text="message"></p>
+            <p class="message-html" v-html="miHTML"></p>
             <br />
             <ul>
                 <li>
@@ -22,8 +25,30 @@
                     <h2>Computed</h2>
                     <p class="calculations">Suma -> Var a: {{ numeroA }} + Var b: {{ numeroB }} = <span>{{ sumarAyBComputed }}</span></p>
                     <p class="calculations">Duplicar -> Var c: {{ numeroC}} = <span>{{duplicarC}}</span></p>
-            </li>
+                </li>
             </ul>
+
+            <h1>BINDING</h1>
+            <img :src="imageSrc" :alt="imageAlt" />
+            <br />
+            <button @click="onClick()">Click me!</button>
+            <br /><br /><br />
+            <input type="text" v-model="textP"/>
+            <p>{{textP}}</p>
+            <br />  <br />  <br />  <br />
+
+            <h1>DATA BINDIG EXAMPLE</h1>
+            <div> 
+                Usando doble binding
+                <input type="text" :value="mensaje1" @keyup="keyUp($event)">
+                <p>{{ mensaje1 }}</p>
+            </div>
+            <br />
+            <div> 
+                Usando v-model
+                <input type="text" v-model="mensaje2" >
+                <p>{{ mensaje2 }}</p>
+            </div>
         </div>
     </body>
 </html>
