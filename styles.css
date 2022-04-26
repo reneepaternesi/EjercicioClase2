@@ -1,0 +1,20 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: grey;
+}
+
+.message {
+    font-size: 25px;
+    color: darkblue;
+    font-weight: bold;
+    
+}
+
+.calculations {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.calculations span {
+    font-weight: bold;;
+}
